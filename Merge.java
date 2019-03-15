@@ -16,7 +16,7 @@ public class Merge {
     for (int j = mid; j < data.length; j++) {
       second[j - mid] = data[j];
     }
-    System.out.println(Arrays.toString(first));
-    System.out.println(Arrays.toString(second));
+    //System.out.println(Arrays.toString(first));
+    //System.out.println(Arrays.toString(second));
   }
 }
