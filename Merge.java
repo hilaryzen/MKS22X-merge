@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Merge {
   public static void mergesort(int[] data) {
 
@@ -14,5 +16,7 @@ public class Merge {
     for (int j = mid; j < data.length; j++) {
       second[j - mid] = data[j];
     }
+    System.out.println(Arrays.toString(first));
+    System.out.println(Arrays.toString(second));
   }
 }
