@@ -26,7 +26,16 @@ public class Merge {
     if (second.length > 1) {
       mergeH(second);
     }
+  }
 
-    //Combine sorted arrays into one
+  public static void merge(int[] data, int[] first, int[] second) {
+    int firstI = 0;
+    int secondI = 0;
+    for (int i = 0; i < data.length; i++) {
+      if (firstI = first.length) {
+        data[i] = second[secondI];
+        secondI++;
+      }
+    }
   }
 }
