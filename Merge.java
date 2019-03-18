@@ -35,6 +35,15 @@ public class Merge {
       if (firstI = first.length) {
         data[i] = second[secondI];
         secondI++;
+      } else if (secondI = second.length) {
+        data[i] = first[firstI];
+        firstI++;
+      } else {
+        if (first[firstI] < second[secondI]) {
+          data[i] = first[firstI];
+        } else {
+          data[i] = second[secondI];
+        }
       }
     }
   }
