@@ -18,5 +18,15 @@ public class Merge {
     }
     //System.out.println(Arrays.toString(first));
     //System.out.println(Arrays.toString(second));
+
+    //If the arrays are more than one number, use merge to sort them
+    if (first.length > 1) {
+      mergeH(first);
+    }
+    if (second.length > 1) {
+      mergeH(second);
+    }
+
+    //Combine sorted arrays into one
   }
 }
