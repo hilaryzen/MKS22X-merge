@@ -26,6 +26,11 @@ public class Merge {
     if (second.length > 1) {
       mergeH(second);
     }
+
+    //Combines two sorted arrays into one
+    merge(data, first, second);
+
+    //System.out.println(Arrays.toString(data));
   }
 
   public static void merge(int[] data, int[] first, int[] second) {
@@ -48,6 +53,6 @@ public class Merge {
         }
       }
     }
-    System.out.println(Arrays.toString(data));
+    //System.out.println(Arrays.toString(data));
   }
 }
