@@ -32,19 +32,22 @@ public class Merge {
     int firstI = 0;
     int secondI = 0;
     for (int i = 0; i < data.length; i++) {
-      if (firstI = first.length) {
+      if (firstI == first.length) {
         data[i] = second[secondI];
         secondI++;
-      } else if (secondI = second.length) {
+      } else if (secondI == second.length) {
         data[i] = first[firstI];
         firstI++;
       } else {
         if (first[firstI] < second[secondI]) {
           data[i] = first[firstI];
+          firstI++;
         } else {
           data[i] = second[secondI];
+          secondI++;
         }
       }
     }
+    System.out.println(Arrays.toString(data));
   }
 }
