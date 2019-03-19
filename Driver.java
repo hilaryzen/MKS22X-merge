@@ -14,5 +14,11 @@ public class Driver {
     int[] merge2 = {2, 3, 8, 19, 24, 34, 36};
     int[] data = {4, 8, 34, 0, 2, 23, 15, 24, 3, 19, 36, 16};
     Merge.merge(data, merge1, merge2);
+
+    System.out.println(" ");
+
+    System.out.println("Testing insertion: ");
+    int[] data3 = {4, 8, 34, 0, 2, 23, 15, 24, 3, 19, 36, 16};
+    Merge.insertion(data3, 0, 5);
   }
 }

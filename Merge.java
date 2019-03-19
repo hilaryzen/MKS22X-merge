@@ -60,11 +60,12 @@ public class Merge {
     for (int i = lo + 1; i <= hi; i++) {
       int value = data[i];
       int j = 1;
-      while (value < data[i - j]) {
+      while (i - j > 0 && value < data[i - j]) {
         data[i - j + 1] = data[i - j];
         j++;
       }
       data[i - j] = value;
     }
+    System.out.println(Arrays.toString(data));
   }
 }
