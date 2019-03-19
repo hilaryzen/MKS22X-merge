@@ -55,4 +55,10 @@ public class Merge {
     }
     //System.out.println(Arrays.toString(data));
   }
+
+  public static void insertion(int[] data, int lo, int hi) {
+    for (int i = 0; i <= hi; i++) {
+      
+    }
+  }
 }
