@@ -19,6 +19,7 @@ public class Driver {
 
     System.out.println("Testing insertion: ");
     int[] data3 = {4, 8, 34, 0, 2, 23, 15, 24, 3, 19, 36, 16};
+    System.out.println(Arrays.toString(data3));
     Merge.insertion(data3, 0, 5);
   }
 }
