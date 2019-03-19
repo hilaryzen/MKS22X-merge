@@ -57,8 +57,14 @@ public class Merge {
   }
 
   public static void insertion(int[] data, int lo, int hi) {
-    for (int i = 0; i <= hi; i++) {
-      
+    for (int i = lo + 1; i <= hi; i++) {
+      int value = data[i];
+      int j = 1;
+      while (value < data[i - j]) {
+        data[i - j + 1] = data[i - j];
+        j++;
+      }
+      data[i - j] = value;
     }
   }
 }
