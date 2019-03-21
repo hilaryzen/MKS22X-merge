@@ -5,6 +5,7 @@ public class Merge {
     mergeH(data);
   }
 
+  //Splits data into two equal arrays and merges them back together
   public static void mergeH(int[] data) {
     //Split data into two halves
     int mid = data.length / 2;
@@ -41,6 +42,7 @@ public class Merge {
     //System.out.println(Arrays.toString(data));
   }
 
+  //Combines two sorted arrays into data
   public static void merge(int[] data, int[] first, int[] second) {
     int firstI = 0;
     int secondI = 0;
