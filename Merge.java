@@ -21,10 +21,18 @@ public class Merge {
 
     //If the arrays are more than one number, use merge to sort them
     if (first.length > 1) {
-      mergeH(first);
+      if (first.length < 50) {
+        insertion(first, 0, first.length - 1);
+      } else {
+        mergeH(first);
+      }
     }
     if (second.length > 1) {
-      mergeH(second);
+      if (second.length < 50) {
+        insertion(second, 0, second.length - 1);
+      } else {
+        mergeH(second);
+      }
     }
 
     //Combines two sorted arrays into one
