@@ -66,7 +66,7 @@ public class Merge {
     //System.out.println(Arrays.toString(data));
   }
 
-/*
+
   public static void mergeT(int[] data, int[] temp, boolean original, int lo, int hi) {
     //Spliting lo to hi into two parts
     int mid = (hi - lo) / 2;
@@ -85,8 +85,27 @@ public class Merge {
     }
 
     //Merging two halves into opposite array
+    int firstI = lo;
+    int secondI = mid + 1;
+    for (int i = 0; i < hi - lo; i++) {
+      if (firstI == mid + 1) {
+        data[i] = second[secondI];
+        secondI++;
+      } else if (secondI == hi + 1) {
+        data[i] = first[firstI];
+        firstI++;
+      } else {
+        if (first[firstI] < second[secondI]) {
+          data[i] = first[firstI];
+          firstI++;
+        } else {
+          data[i] = second[secondI];
+          secondI++;
+        }
+      }
+    }
   }
-*/
+
 
   public static void insertion(int[] data, int lo, int hi) {
     for (int i = lo + 1; i <= hi; i++) {
