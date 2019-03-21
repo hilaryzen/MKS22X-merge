@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Merge {
   public static void mergesort(int[] data) {
-
+    mergeH(data);
   }
 
   public static void mergeH(int[] data) {
@@ -65,7 +65,7 @@ public class Merge {
         j++;
       }
       data[i - j + 1] = value;
-      System.out.println(Arrays.toString(data));
+      //System.out.println(Arrays.toString(data));
     }
     //System.out.println(Arrays.toString(data));
   }
