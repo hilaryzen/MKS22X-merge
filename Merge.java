@@ -42,22 +42,6 @@ public class Merge {
     //System.out.println(Arrays.toString(data));
   }
 
-  public static mergeH2(int[] data, int[] temp, boolean original, int lo, int hi) {
-    int mid = (hi - lo) / 2;
-    if (original) {
-      if (mid - lo > 1) {
-        if (mid - lo < 50) {
-          insertion(data, lo, mid);
-        }
-      }
-      if (hi - mid > 1) {
-        if (hi - mid < 50) {
-          insertion(data, mid + 1, hi);
-        }
-      }
-    }
-  }
-
   //Combines two sorted arrays into data
   public static void merge(int[] data, int[] first, int[] second) {
     int firstI = 0;
@@ -81,6 +65,28 @@ public class Merge {
     }
     //System.out.println(Arrays.toString(data));
   }
+
+/*
+  public static void mergeT(int[] data, int[] temp, boolean original, int lo, int hi) {
+    //Spliting lo to hi into two parts
+    int mid = (hi - lo) / 2;
+    if (mid - lo > 1) {
+      if (mid - lo < 50) {
+        insertion(data, lo, mid);
+      }
+      //Calls recursion but flips the boolean
+      mergeT(data, temp, ! original, lo, mid);
+    }
+    if (hi - mid > 1) {
+      if (hi - mid < 50) {
+        insertion(data, mid + 1, hi);
+      }
+      mergeT(data, temp, ! original, mid + 1, hi);
+    }
+
+    //Merging two halves into opposite array
+  }
+*/
 
   public static void insertion(int[] data, int lo, int hi) {
     for (int i = lo + 1; i <= hi; i++) {
