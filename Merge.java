@@ -66,7 +66,7 @@ public class Merge {
     //System.out.println(Arrays.toString(data));
   }
 
-
+/*
   public static void mergeT(int[] data, int[] temp, boolean original, int lo, int hi) {
     //Spliting lo to hi into two parts
     int mid = (hi - lo) / 2;
@@ -105,7 +105,7 @@ public class Merge {
       }
     }
   }
-
+*/
 
   public static void insertion(int[] data, int lo, int hi) {
     for (int i = lo + 1; i <= hi; i++) {
